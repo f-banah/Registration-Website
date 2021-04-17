@@ -1,0 +1,58 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `projet`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `table1`
+--
+
+CREATE TABLE table1 (
+Matricule INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+Photo VARCHAR(200) NOT NULL,			
+Nom VARCHAR(30) NOT NULL ,
+Prenom VARCHAR(30) NOT NULL ,
+Cycle VARCHAR(30) NOT NULL ,
+Filiere VARCHAR(20) NOT NULL ,
+Niveau VARCHAR(2) NOT NULL ,
+Sexe VARCHAR(1) NOT NULL ,
+CIN VARCHAR(200) NOT NULL,
+Bac VARCHAR(200) NOT NULL,
+attestation VARCHAR(200) NOT NULL,
+Date_Naissance date NOT NULL ,
+Date_inscription date NOT NULL ,
+Email VARCHAR(255) NOT NULL,
+Mot_passe VARCHAR(200) NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `table1`
+--
+
+INSERT INTO `table1` (`Matricule`, `Photo`, `Nom`, `Prenom`, `Cycle`, `Filiere`, `Niveau`, `Sexe`, `CIN`, `Bac`, `attestation`, `Date_Naissance`, `Date_inscription`, `Email`, `Mot_passe`) VALUES ('000000', 'maxresdefault.jpg', 'Banah', 'Fathiya', 'Ingénieur d\'état', 'DSE', '1A', 'F', 'E435789567', 'f559d83f72da48c368e330cfd7a7b4ff.jpg', 'maxresdefault.jpg', '1999-08-08', '2020-09-13', 'banah990@gmail.com', 'HPIJI3OI9899K');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `table1`
+--
+ALTER TABLE `table1`
+  ADD PRIMARY KEY (`Matricule`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
